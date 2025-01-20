@@ -1,4 +1,4 @@
-# First Project
+# Simple Express.js app
 
 This is a simple Express.js project using Mustache templates with `hogan-middleware`. The project includes basic setup for rendering templates and automatically restarting the server during development using `nodemon`.
 
