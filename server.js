@@ -5,13 +5,13 @@ const hoganMiddleware = require('hogan-middleware');
 
 /* Express configuration section */
 const app = express();
-//Setting the views directory or setting path for the views
+// Setting the views directory or setting path for the views
 app.set('views', path.join(__dirname, 'views'));
 // Setting the view engine
 app.set('view engine', 'mustache');
 // Register custom Mustache template engine using Hogan middleware from Twitter for Express
 app.engine('mustache', hoganMiddleware.__express);
-//Allow express to find public directory or Setting the public directory or setting path for the public directory
+// Allow express to find public directory or Setting the public directory or setting path for the public directory
 // Connecting static assets directory. This will allow us to serve static files like images, CSS, and JavaScript files.
 app.use(express.static(path.join(__dirname, 'public')));
 
