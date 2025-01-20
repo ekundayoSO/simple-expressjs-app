@@ -28,7 +28,7 @@ jobs:
         run: docker build -t simple-expressjs-app .
 
       - name: Run Docker container
-        run: docker run -d -p 8000:3000 simple-expressjs-app
+        run: docker run -d -p 3000:3000 simple-expressjs-app
 
       - name: Check application status
         run: |
