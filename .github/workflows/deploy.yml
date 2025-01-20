@@ -1,0 +1,42 @@
+name: Node.js Express App CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Docker image
+        run: docker build -t simple-expressjs-app .
+
+      - name: Run Docker container
+        run: docker run -d -p 8000:3000 simple-expressjs-app
+
+      - name: Check application status
+        run: |
+          curl --fail http://localhost:3000 || exit 1
+
+      - name: Push Docker image to Docker Hub (optional)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker tag simple-expressjs-app ${{ secrets.DOCKER_USERNAME }}/simple-expressjs-app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/simple-expressjs-app:latest
