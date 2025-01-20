@@ -12,11 +12,11 @@ This project sets up a basic Express server, renders Mustache templates using th
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/first-project.git
+   git clone https://github.com/ekundayoSO/simple-expressjs-app.git
    ````
 2. Navigate to the project directory:
     ```bash
-   cd first-project
+   cd simple-expressjs-app
     ```
 3. Install the dependencies:
     ```bash
