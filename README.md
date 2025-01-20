@@ -26,14 +26,18 @@ This project sets up a basic Express server, renders Mustache templates using th
     ```bash
     npm run devStart
     ```
-5. Dependencies
+5. Run the Docker container:
+    ```bash
+    docker run -p <your chosen port>:3000 simple-expressjs-app
+    ```
+6. Dependencies
     ```bash
     . express: Web framework for Node.js.
     . hjs: Template engine for the project.
     . hogan-middleware: Middleware for rendering Mustache templates with  Hogan.
     . nodemon: Utility for automatically restarting the server during development.
     ```
-6. Author
+7. Author
     ```bash
     . Sulaimon Ekundayo
     ```
