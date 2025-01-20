@@ -1,5 +1,7 @@
 # Simple Express.js app
 
+[![Node.js Express App CI/CD Pipeline](https://github.com/ekundayoSO/simple-expressjs-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/ekundayoSO/simple-expressjs-app/actions/workflows/deploy.yml)
+
 This is a simple Express.js project using Mustache templates with `hogan-middleware`. The project includes basic setup for rendering templates and automatically restarting the server during development using `nodemon`.
 
 ## Description
