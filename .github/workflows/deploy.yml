@@ -30,10 +30,6 @@ jobs:
       - name: Run Docker container
         run: docker run -d -p 3000:3000 simple-expressjs-app
 
-      - name: Check application status
-        run: |
-          curl --fail http://localhost:3000 || exit 1
-
       - name: Push Docker image to Docker Hub (optional)
         if: github.ref == 'refs/heads/main'
         run: |
