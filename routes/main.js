@@ -7,7 +7,7 @@ router.get('/', (req, res, next) => {
 });
 
 // Send a JSON object as a response to browser
-router.get('/greet', (req, res, next) => {
+router.get('/greeting', (req, res, next) => {
     const data = {
         greeting: 'Hello bro!',
     }
