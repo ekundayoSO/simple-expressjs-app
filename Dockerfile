@@ -1,7 +1,7 @@
 # Use the official Node.js image as the base image for this project
 FROM node:18
 
-# Set the working directory inside the container
+# Set the working directory inside the docker container
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json (if present) to the working directory
