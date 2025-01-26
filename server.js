@@ -15,7 +15,7 @@ app.engine('mustache', hoganMiddleware.__express);
 // Connecting static assets directory. This will allow us to serve static files like images, CSS, and JavaScript files.
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* #Routes section */
+/* ###Routes section */
 
 // Importing the main router
 const mainRouter = require('./routes/main');
