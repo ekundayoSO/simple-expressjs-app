@@ -42,5 +42,8 @@ This project sets up a basic Express server, renders Mustache templates using th
     . Sulaimon Ekundayo
     ```
 
-
+8. Contribution
+    ```bash
+    Make your contribution by cloning the repo
+    ```
 
