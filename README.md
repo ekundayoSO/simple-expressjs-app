@@ -39,7 +39,7 @@ This project sets up a basic Express server, renders Mustache templates using th
     ```
 7. Author
     ```bash
-    . Sulaimon E.O
+    . Sulaimon E.Ola
     ```
 
 8. Contribution is welcomed from all
