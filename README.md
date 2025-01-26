@@ -42,7 +42,7 @@ This project sets up a basic Express server, renders Mustache templates using th
     . Sulaimon E.O
     ```
 
-8. Contribution is allowed
+8. Contribution
     ```bash
     Make your contribution by cloning the repo
     ```
