@@ -26,12 +26,13 @@ app.use('/', mainRouter);
 
 /* 
 # Start the server - first option
+*/
 app.listen(3000);  // 3000, 8080, 5000, 8000, 4000, 7000, 6000
 console.log('Server is running on http://localhost:3000');
-*/
+
 
 /* start the server - second option*/
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+// app.listen(3000, () => {
+//   console.log('Server is running on port 3000');
+// });
 
